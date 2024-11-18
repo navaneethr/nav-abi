@@ -18,7 +18,6 @@ const Todo = () => {
       const newTasks = tasks.filter((task, index) => id !== index);
       setTasks(newTasks);
     } else {
-      // Logic for other actions
       alert(`Action: ${action}`);
     }
   };
