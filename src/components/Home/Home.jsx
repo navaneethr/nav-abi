@@ -1,6 +1,6 @@
 import React from "react";
-import { Heading } from "@adobe/react-spectrum";
 import Todo from "./Todo";
+import { Grid, View } from "@adobe/react-spectrum";
 
 const Home = () => {
   return (

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Button, Flex, TextField, ListView, Item, Heading, View } from "@adobe/react-spectrum";
+import { Button, Flex, TextField, ListView, Item, Heading, View, Text, ActionMenu } from "@adobe/react-spectrum";
 
 const Todo = () => {
   const [tasks, setTasks] = useState([]);
@@ -13,10 +13,14 @@ const Todo = () => {
     }
   };
 
-  const removeTask = (index) => {
-    // implement this
-    const newTasks = tasks.filter((task, id) => id !== index);
-    setTasks(newTasks);
+  const handleAction = (id, action) => {
+    if (action === 'delete') {
+      const newTasks = tasks.filter((task, index) => id !== index);
+      setTasks(newTasks);
+    } else {
+      // Logic for other actions
+      alert(`Action: ${action}`);
+    }
   };
 
   return (
@@ -43,12 +47,15 @@ const Todo = () => {
       >
         {(item) => (
           <Item>
-            <Flex justifyContent="space-between" alignItems="center">
-              <span>{item.name}</span>
-              <Button variant="negative" onPress={() => removeTask(item.id)}>
-                Remove
-              </Button>
-            </Flex>
+            <Text>{item.name}</Text>
+            <ActionMenu onAction={(action) => handleAction(item.id, action)}>
+              <Item key="delete" textValue="Delete">
+                <Text>Delete</Text>
+              </Item>
+              <Item key="edit" textValue="Edit">
+                <Text>Edit</Text>
+              </Item>
+            </ActionMenu>
           </Item>
         )}
       </ListView>

@@ -8,8 +8,9 @@ import About from "./components/About";
 import NotFound from "./components/NotFound";
 
 const App = () => {
+  console.log('-----> Theme', defaultTheme)
   return (
-    <Provider theme={defaultTheme} locale="en-US">
+    <Provider theme={defaultTheme} locale="en-US" colorScheme="light">
       <Router>
         <Navbar />
         <Routes>
