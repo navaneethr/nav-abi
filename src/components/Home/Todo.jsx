@@ -5,7 +5,8 @@ const Todo = () => {
   const [tasks, setTasks] = useState([]);
   const [inputValue, setInputValue] = useState("");
 
-  const addTask = () => {
+  
+  const addTask = (task) => {
     if (inputValue.trim() !== "") {
       setTasks([...tasks, inputValue]);
       setInputValue("");
@@ -14,6 +15,8 @@ const Todo = () => {
 
   const removeTask = (index) => {
     // implement this
+    const newTasks = tasks.filter((task, id) => id !== index);
+    setTasks(newTasks);
   };
 
   return (
