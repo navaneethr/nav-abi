@@ -25,7 +25,7 @@ const Todo = () => {
   return (
     <View padding="size-200">
       <Heading level={2}>Todo List</Heading>
-      <Flex gap="size-100" marginBottom="size-200">
+      <Flex gap="size-100" marginBottom="size-200" alignItems="flex-end">
         <TextField
           placeholder="Enter a task"
           value={inputValue}
