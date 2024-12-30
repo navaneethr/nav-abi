@@ -9,8 +9,10 @@ const SideNavbar = () => {
 
   const navItems = [
     { id: "/", name: "Home" },
+    { id: "/basicTodo", name: "Basic Todo" },
     { id: "/about", name: "About" },
     { id: "/contact", name: "Contact" },
+    { id: "/alarms", name: "Alarms" },
   ];
 
   return (
