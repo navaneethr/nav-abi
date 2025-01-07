@@ -12,7 +12,7 @@ const SideNavbar = () => {
     { id: "/basicTodo", name: "Basic Todo" },
     { id: "/about", name: "About" },
     { id: "/contact", name: "Contact" },
-    { id: "/alarms", name: "Alarms" },
+    { id: "/scribble", name: "Scribble" },
   ];
 
   return (

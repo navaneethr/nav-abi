@@ -7,7 +7,7 @@ import Home from "./components/Home/Home";
 import About from "./components/About";
 import NotFound from "./components/NotFound";
 import BasicTodo from "./components/BasicTodo";
-import Alarms from "./components/Alarms";
+import Scribble from "./components/Scribble";
 
 const App = () => {
   return (
@@ -20,7 +20,7 @@ const App = () => {
               <Route path="/" element={<Home />} />
               <Route path="/basicTodo" element={<BasicTodo />} />
               <Route path="/about" element={<About />} />
-              <Route path="/alarms" element={<Alarms />} />
+              <Route path="/scribble" element={<Scribble />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </main>
