@@ -13,6 +13,7 @@ const SideNavbar = () => {
     { id: "/about", name: "About" },
     { id: "/contact", name: "Contact" },
     { id: "/scribble", name: "Scribble" },
+    { id: "/basicCalculator", name: "BasicCalculator" },
   ];
 
   return (
