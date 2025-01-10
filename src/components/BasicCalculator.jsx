@@ -6,18 +6,18 @@ const BasicCalculator = () => {
     let [inputNum, setInputNum] = useState("");
     let [result, setResult ] = useState(0);
     
-    let inputNumArr = inputNum.split(" ").map(Number);
-    console.log(inputNumArr);
+    const NumberDummy = (elem) => { return Number(elem) };
+
+    let inputNumArr = inputNum.split(" ").map(NumberDummy);
 
     const add = () => {
         let sum = 0;
         inputNumArr.forEach(num => {
             sum = sum + num;
         });
-        result = sum;
         setResult(sum);
     }
-    
+
     const subtract = () => {
         let sub = 0;
         inputNumArr.forEach((num, index) => {
@@ -27,7 +27,6 @@ const BasicCalculator = () => {
                 sub = sub - num;
             }
         });
-        result = sub;
         setResult(sub);
     }
 
@@ -36,7 +35,6 @@ const BasicCalculator = () => {
         inputNumArr.forEach(num => {
             product = product * num;
         });
-        result = product;
         setResult(product);
     }
 
