@@ -27,7 +27,7 @@ const BasicTodo = () => {
     }
 
     const editTaskAction = (index) => {
-        editText
+        // editText
     }
 
 
