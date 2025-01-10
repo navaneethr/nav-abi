@@ -17,10 +17,15 @@ const BasicCalculator = () => {
         result = sum;
         setResult(sum);
     }
+    
     const subtract = () => {
         let sub = 0;
-        inputNumArr.forEach(num => {
-            sub = num - sub;
+        inputNumArr.forEach((num, index) => {
+            if(index === 0) {
+                sub = num;
+            } else {
+                sub = sub - num;
+            }
         });
         result = sub;
         setResult(sub);
