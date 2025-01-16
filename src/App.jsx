@@ -9,6 +9,7 @@ import NotFound from "./components/NotFound";
 import BasicTodo from "./components/BasicTodo";
 import Scribble from "./components/Scribble";
 import BasicCalculator from "./components/BasicCalculator";
+import NoteTaker from "./components/NoteTaker";
 
 const App = () => {
   return (
@@ -23,6 +24,7 @@ const App = () => {
               <Route path="/about" element={<About />} />
               <Route path="/scribble" element={<Scribble />} />
               <Route path="/basicCalculator" element={<BasicCalculator />} />
+              <Route path="/noteTaker" element={<NoteTaker />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </main>

@@ -28,6 +28,20 @@ const BasicTodo = () => {
 
     const editTaskAction = (index) => {
         // editText
+        // let sim = [ "a", "b", "c"];
+        // let r = "d"
+        // sim[1] = r;
+        // console.log(sim);
+        let newTasks = tasks;
+
+       newTasks = newTasks.map((e, i)=> { 
+            if (i == index) {
+                return editText;
+            } 
+            return e;
+         } )
+
+        setTasks(newTasks);
     }
 
 
