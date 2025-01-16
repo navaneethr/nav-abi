@@ -51,18 +51,28 @@ const NoteTaker = () => {
                     <button className={styles.addBtn} type="button" onClick={ actionHandler }>Add Note</button>
                 </div>
             </div>
-            <div >
-                <dialog open={notes.length > 0} className={styles.notes}>
+            <div>
+                <dialog id={styles.notesCont} className={styles.mainCont} open={notes.length > 0} >
                     <h3>Notes</h3>
-                    <ol id={styles.noteList}>
-                    {notes.map((note, index) => (
-                        <li key={index}>
-                        <em>{note.title}</em> :  {note.desc}
-                        <button className={styles.deleteBtn} onClick={() => deleteNoteAction(index)}>Delete</button>
-                    </li>
-                    ))}
-                </ol>
-
+                    
+                        
+                            
+                            <ol id={styles.noteList}>
+                                {notes.map((note, index) => (
+                                <table>
+                                <tr>
+                                    <th>S.No.</th><br/>
+                                        <li key={index}>
+                                    <th>Title</th>
+                                        <em>{note.title}</em> : <th>Description</th> {note.desc}
+                                    <button className={styles.deleteBtn} onClick={() => deleteNoteAction(index)}>Delete</button>
+                                </li>
+                                </tr>
+                                </table>
+                                ))}
+                                
+                            </ol>
+                    
                 </dialog>
             </div>
         </div>
