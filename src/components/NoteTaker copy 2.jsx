@@ -54,25 +54,24 @@ const NoteTaker = () => {
             <div>
                 <dialog id={styles.notesCont} className={styles.mainCont} open={notes.length > 0} >
                     <h3>Notes</h3>
-                    
-                        
-                            
-                            <ol id={styles.noteList}>
-                                {notes.map((note, index) => (
-                                <table>
+                    <div id={styles.noteList}>
+                        <table>
+                            <tr>
+                                <th>S.No.</th>
+                                <th>Title</th>
+                                <th>Action</th>
+                            </tr>
+                            {notes.map((note, index) => (
                                 <tr>
-                                    <th>S.No.</th><br/>
-                                        <li key={index}>
-                                    <th>Title</th>
-                                        <em>{note.title}</em> : <th>Description</th> {note.desc}
-                                    <button className={styles.deleteBtn} onClick={() => deleteNoteAction(index)}>Delete</button>
-                                </li>
+                                    <td>{index}</td>
+                                    <td>{note.desc}</td> 
+                                    <td>
+                                        <button className={styles.deleteBtn} onClick={() => deleteNoteAction(index)}>Delete</button>
+                                    </td>
                                 </tr>
-                                </table>
-                                ))}
-                                
-                            </ol>
-                    
+                            ))}
+                        </table>
+                    </div>
                 </dialog>
             </div>
         </div>

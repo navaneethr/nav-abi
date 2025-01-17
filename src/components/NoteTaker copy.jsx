@@ -54,10 +54,12 @@ const NoteTaker = () => {
             <div>
                 <ul id={styles.noteList}>
                     {notes.map((note, index) => {
-                        <li key={ index }>
-                        { note }
-                        <button onClick={() => deleteNoteAction(index)}>Delete</button>
-                    </li>
+                        return (
+                            <li key={ index }>
+                                { note }
+                                <button onClick={() => deleteNoteAction(index)}>Delete</button>
+                            </li>
+                        )
                     })}
                 </ul>
             </div>
