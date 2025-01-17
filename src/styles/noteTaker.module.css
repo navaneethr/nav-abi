@@ -1,0 +1,63 @@
+#pageTitle {
+    position:relative;
+    display: block;
+    text-align: center;
+}
+
+.mainCont {
+    position:relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    outline: 2px solid black;
+}
+
+.titleInput {
+    height: 20px;
+    width: 400px;
+    border: 1px solid #ccc;
+    padding: 6px;
+    font-size: 14px;
+    margin-bottom: 10px; /* for spacing */
+  }
+  
+  .descriptionInput {
+    height: 100px;
+    width: 400px;
+    border: 1px solid #999;
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  .addBtn {
+    border-radius: 20px;
+    padding: 10px;
+    margin: 20px 20px 0px 0px;
+    background-color: lightgreen;
+  }
+
+  .deleteBtn {
+    position: relative;
+    border-radius: 15px;
+    left: 60px;
+    margin: 3px;
+    padding: 4px;
+    background-color: lightcoral;
+  }
+
+  .notes {
+    width: auto;
+    position:relative;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  }
+
+  #notesCont {
+    margin-top: 20px;
+    width: 70%;
+  }
