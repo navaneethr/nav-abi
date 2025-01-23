@@ -35,7 +35,7 @@ const BasicTodo = () => {
         let newTasks = tasks;
 
        newTasks = newTasks.map((e, i)=> { 
-            if (i == index) {
+            if (i === index) {
                 return editText;
             } 
             return e;

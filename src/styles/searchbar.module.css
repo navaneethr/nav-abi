@@ -1,0 +1,31 @@
+#pageTitle {
+    position:relative;
+    display: block;
+    text-align: center;
+}
+
+.mainCont {
+    position:relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.titleInput {
+    height: 20px;
+    width: 400px;
+    border: 1px solid #ccc;
+    padding: 6px;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  
+  .notes {
+    width: auto;
+    position:relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }

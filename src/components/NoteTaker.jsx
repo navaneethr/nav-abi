@@ -21,7 +21,7 @@ const NoteTaker = () => {
     }
 
     const deleteNoteAction = (index) => {
-        const newNotes = notes.filter((note, noteIndex) => noteIndex != index);
+        const newNotes = notes.filter((note, noteIndex) => noteIndex !== index);
         setNotes(newNotes);
         setInputTitle("");
         setInputNote("");
