@@ -1,80 +1,56 @@
 import React, { useState } from "react"
 import styles from '../styles/searchbar.module.css'
 
-const Searchbar = () => {
-    const countryData = [
-        "Afghanistan",
-        "United States of America",
-        "Andorra",
-        "Antartica",
-        "Argentina",
-        "Armenia",
-        "Australia",
-        "Austria",
-        "Bahrain",
-        "Bangladesh",
-        "Belarus",
-        "Belgium",
-        "Bermuda",
-        "Italy",
-        "India",
-        "Indonesia",
-        "Thailand",
-        "Ireland",
-        "United Kingdom",
-        "United Arab Emirates",
-        "Netherlands",
-        "Nicaragua",
-        "Norway",
-        "Dominican Republic",
-        "Denmark",
-        "Vantanu",
-        "Vietnam",
-        "Mexico",
-        "Morocco",
-        "Spain",
-        "Sweden",
-    ]
+const Searchbar = ({options, label, results, setResults}) => {
 
-    let [ country, setCountry ] = useState([]);
     let [ input, setInputText ] = useState("");
 
     function handleSearch() {
         if(input === "") {
-            setCountry(countryData);
+            setResults([]);
             return;
         }
         else {
-            let filterBySearch = countryData.filter((item) => {
-                if(item.toLowerCase().includes(input.toLowerCase())) {
-                    return item;
-                }
-            })
-            setCountry(filterBySearch);
+            if(input.length > 2) {
+                let filterBySearch = options.filter((item) => {
+                    if(item.toLowerCase().includes(input.toLowerCase())) {
+                        return item;
+                    }
+                })
+                setResults(filterBySearch);
+            }
         }
     }
 
+    const onShowHideAll = (show) => {
+        setInputText("")
+        setResults(show ? options : [])
+    };
+
     return (
         <div>
-            <h1 id={styles.pageTitle}>Searchbar</h1>
-            <div>
+            <div style={{display: "flex", alignItems: "flex-end"}}>
                 <div className={styles.mainCont}>
-                <label>Search Country</label>
-                <input
-                    className={styles.titleInput}
-                    type="text"
-                    placeholder="Enter search items"
-                    onChange={(e) => setInputText(e.target.value)}
-                    value={input}
-                    onKeyUp={handleSearch}
-                />
+                    <label>{label}</label>
+                    <input
+                        className={styles.titleInput}
+                        type="text"
+                        placeholder="Enter search items"
+                        onChange={(e) => setInputText(e.target.value)}
+                        value={input}
+                        onKeyUp={handleSearch}
+                    />
+                </div>
+                <div>
+                    <button onClick={() => onShowHideAll(true)}>Show All</button>
+                    <button onClick={() => onShowHideAll(false)}>Hide All</button>
                 </div>
             </div>
             <div className={styles.notes}>
                 {
-                    country.map((country) => {
+                    results.map((result) => {
                         return (
-                            <div>{country}</div>
+                            <div>{result}</div>
                         )
                     })
                 }

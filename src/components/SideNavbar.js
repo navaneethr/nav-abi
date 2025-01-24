@@ -15,7 +15,7 @@ const SideNavbar = () => {
     { id: "/scribble", name: "Scribble" },
     { id: "/basicCalculator", name: "BasicCalculator" },
     { id: "/noteTaker", name: "NoteTaker" },
-    { id: "/searchbar", name: "Searchbar" },
+    // { id: "/searchbar", name: "Searchbar" },
   ];
 
   return (

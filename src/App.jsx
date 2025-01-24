@@ -26,7 +26,6 @@ const App = () => {
               <Route path="/scribble" element={<Scribble />} />
               <Route path="/basicCalculator" element={<BasicCalculator />} />
               <Route path="/noteTaker" element={<NoteTaker />} />
-              <Route path="/searchbar" element={<Searchbar />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </main>
