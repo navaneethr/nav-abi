@@ -10,7 +10,7 @@ import BasicTodo from "./components/BasicTodo";
 import Scribble from "./components/Scribble";
 import BasicCalculator from "./components/BasicCalculator";
 import NoteTaker from "./components/NoteTaker";
-import Searchbar from "./components/Searchbar";
+import Catalogue from "./components/Catalogue";
 
 const App = () => {
   return (
@@ -26,6 +26,7 @@ const App = () => {
               <Route path="/scribble" element={<Scribble />} />
               <Route path="/basicCalculator" element={<BasicCalculator />} />
               <Route path="/noteTaker" element={<NoteTaker />} />
+              <Route path="/catalogue" element={<Catalogue />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </main>
