@@ -1,5 +1,6 @@
 import React, { useState } from "react"
 import styles from '../styles/searchbar.module.css'
+import Product from "./Utils/Product";
 
 const ProductSearchbar = ({options, label, products, setProdResults}) => {
 
@@ -50,15 +51,16 @@ const ProductSearchbar = ({options, label, products, setProdResults}) => {
                 {
                     products.length > 0 ? (
                         products.map((item) => (
-                            <div key={item.key}>
-                                 <h4>{item.name}</h4>
-                                 <img src={item.image} />
-                                 <p>{item.model}</p>
-                                 <p>{item.sku}</p>
-                                 <p>{item.rating}</p>
-                                 <p>{item.price}</p>
-                                 <p>{item.discount}</p>
-                             </div>
+                             <Product
+                                key={item.key} 
+                                name={item.name} 
+                                image={item.image} 
+                                model={item.model} 
+                                sku={item.sku} 
+                                rating={item.rating}
+                                price={item.price}
+                                discount={item.discount}
+                            />
                         ))
                     ) : (
                         <p>No Products found.</p>

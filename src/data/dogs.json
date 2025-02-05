@@ -1,0 +1,191 @@
+[
+    {
+      "breed": "Labrador Retriever",
+      "origin": "Canada",
+      "size": "Large",
+      "weight_range": "55-80 lbs",
+      "life_expectancy": "10-12 years",
+      "temperament": ["Friendly", "Outgoing", "Gentle"],
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Labrador_Retriever_Standing.jpg/800px-Labrador_Retriever_Standing.jpg"
+    },
+    {
+      "breed": "German Shepherd",
+      "origin": "Germany",
+      "size": "Large",
+      "weight_range": "50-90 lbs",
+      "life_expectancy": "9-13 years",
+      "temperament": ["Confident", "Intelligent", "Loyal"],
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/German_Shepherd_portrait_2010.jpg/800px-German_Shepherd_portrait_2010.jpg"
+    },
+    {
+      "breed": "Golden Retriever",
+      "origin": "Scotland",
+      "size": "Large",
+      "weight_range": "55-75 lbs",
+      "life_expectancy": "10-12 years",
+      "temperament": ["Friendly", "Intelligent", "Reliable"],
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Golden_Retriever_At_The_Beach.jpg/800px-Golden_Retriever_At_The_Beach.jpg"
+    },
+    {
+      "breed": "Bulldog",
+      "origin": "England",
+      "size": "Medium",
+      "weight_range": "40-50 lbs",
+      "life_expectancy": "8-12 years",
+      "temperament": ["Calm", "Courageous", "Affectionate"],
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Bulldog_(UK)_1.jpg/800px-Bulldog_(UK)_1.jpg"
+    },
+    {
+      "breed": "Poodle",
+      "origin": "Germany/France",
+      "size": "Small to Medium",
+      "weight_range": "10-70 lbs",
+      "life_expectancy": "12-15 years",
+      "temperament": ["Intelligent", "Active", "Alert"],
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Poodle_3.jpg/800px-Poodle_3.jpg"
+    },
+    {
+      "breed": "Beagle",
+      "origin": "England",
+      "size": "Small to Medium",
+      "weight_range": "20-30 lbs",
+      "life_expectancy": "12-15 years",
+      "temperament": ["Curious", "Friendly", "Merry"],
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Beagle_BD.jpg/800px-Beagle_BD.jpg"
+    },
+    {
+      "breed": "Boxer",
+      "origin": "Germany",
+      "size": "Medium to Large",
+      "weight_range": "50-80 lbs",
+      "life_expectancy": "10-12 years",
+      "temperament": ["Energetic", "Loyal", "Playful"],
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Boxer_female.jpg/800px-Boxer_female.jpg"
+    },
+    {
+      "breed": "Shih Tzu",
+      "origin": "China",
+      "size": "Small",
+      "weight_range": "9-16 lbs",
+      "life_expectancy": "10-18 years",
+      "temperament": ["Affectionate", "Outgoing", "Alert"],
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Shih_Tzu.jpg/800px-Shih_Tzu.jpg"
+    },
+    {
+      "breed": "Dachshund",
+      "origin": "Germany",
+      "size": "Small",
+      "weight_range": "16-32 lbs",
+      "life_expectancy": "12-16 years",
+      "temperament": ["Curious", "Brave", "Playful"],
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Dachshund_500.jpg/800px-Dachshund_500.jpg"
+    },
+    {
+      "breed": "Chihuahua",
+      "origin": "Mexico",
+      "size": "Small",
+      "weight_range": "2-6 lbs",
+      "life_expectancy": "14-17 years",
+      "temperament": ["Lively", "Bold", "Alert"],
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Chihuahua_in_the_Sun.jpg/800px-Chihuahua_in_the_Sun.jpg"
+    },
+    {
+      "breed": "French Bulldog",
+      "origin": "France",
+      "size": "Small",
+      "weight_range": "16-28 lbs",
+      "life_expectancy": "10-12 years",
+      "temperament": ["Playful", "Affectionate", "Adaptable"],
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/French_Bulldog_-_Head.jpg/800px-French_Bulldog_-_Head.jpg"
+    },
+    {
+      "breed": "Rottweiler",
+      "origin": "Germany",
+      "size": "Large",
+      "weight_range": "80-135 lbs",
+      "life_expectancy": "8-10 years",
+      "temperament": ["Confident", "Loyal", "Good-natured"],
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Rottweiler_looking.jpg/800px-Rottweiler_looking.jpg"
+    },
+    {
+      "breed": "Siberian Husky",
+      "origin": "Siberia",
+      "size": "Medium",
+      "weight_range": "35-60 lbs",
+      "life_expectancy": "12-15 years",
+      "temperament": ["Friendly", "Energetic", "Independent"],
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Siberian_Husky_%28cropped%29.jpg/800px-Siberian_Husky_%28cropped%29.jpg"
+    },
+    {
+      "breed": "Yorkshire Terrier",
+      "origin": "England",
+      "size": "Small",
+      "weight_range": "4-7 lbs",
+      "life_expectancy": "12-15 years",
+      "temperament": ["Spirited", "Affectionate", "Loyal"],
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Yorkshire_Terrier.jpg/800px-Yorkshire_Terrier.jpg"
+    },
+    {
+      "breed": "Cocker Spaniel",
+      "origin": "England",
+      "size": "Medium",
+      "weight_range": "20-30 lbs",
+      "life_expectancy": "12-15 years",
+      "temperament": ["Gentle", "Playful", "Affectionate"],
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Cocker_Spaniel_Head.jpg/800px-Cocker_Spaniel_Head.jpg"
+    },
+    {
+      "breed": "Dalmatian",
+      "origin": "Croatia",
+      "size": "Medium",
+      "weight_range": "45-70 lbs",
+      "life_expectancy": "10-13 years",
+      "temperament": ["Energetic", "Friendly", "Outgoing"],
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Dalmatian_in_the_park.jpg/800px-Dalmatian_in_the_park.jpg"
+    },
+    {
+      "breed": "Great Dane",
+      "origin": "Germany",
+      "size": "Giant",
+      "weight_range": "110-175 lbs",
+      "life_expectancy": "7-10 years",
+      "temperament": ["Friendly", "Patient", "Devoted"],
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Great_Dane_2009.jpg/800px-Great_Dane_2009.jpg"
+    },
+    {
+      "breed": "Pug",
+      "origin": "China",
+      "size": "Small",
+      "weight_range": "14-18 lbs",
+      "life_expectancy": "12-15 years",
+      "temperament": ["Charming", "Playful", "Affectionate"],
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Pug_dog.jpg/800px-Pug_dog.jpg"
+    },
+    {
+      "breed": "Maltese",
+      "origin": "Malta",
+      "size": "Small",
+      "weight_range": "4-7 lbs",
+      "life_expectancy": "12-15 years",
+      "temperament": ["Gentle", "Playful", "Affectionate"],
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Maltese_700.jpg/800px-Maltese_700.jpg"
+    },
+    {
+      "breed": "Border Collie",
+      "origin": "United Kingdom",
+      "size": "Medium",
+      "weight_range": "30-45 lbs",
+      "life_expectancy": "12-15 years",
+      "temperament": ["Intelligent", "Energetic", "Alert"],
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Border_collie_in_a_field.jpg/800px-Border_collie_in_a_field.jpg"
+    },
+    {
+      "breed": "Shiba Inu",
+      "origin": "Japan",
+      "size": "Small to Medium",
+      "weight_range": "17-23 lbs",
+      "life_expectancy": "12-16 years",
+      "temperament": ["Confident", "Loyal", "Alert"],
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Shiba_Inu_2014.jpg/800px-Shiba_Inu_2014.jpg"
+    }
+  ]  

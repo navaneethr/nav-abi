@@ -16,6 +16,8 @@ const SideNavbar = () => {
     { id: "/basicCalculator", name: "BasicCalculator" },
     { id: "/noteTaker", name: "NoteTaker" },
     { id: "/catalogue", name: "Catalogue" },
+    { id: "/dogs", name: "Dogs" },
+
     // { id: "/searchbar", name: "Searchbar" },
   ];
 
