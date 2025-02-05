@@ -38,7 +38,7 @@
     {
       "breed": "Poodle",
       "origin": "Germany/France",
-      "size": "Small to Medium",
+      "size": "Medium",
       "weight_range": "10-70 lbs",
       "life_expectancy": "12-15 years",
       "temperament": ["Intelligent", "Active", "Alert"],
@@ -47,7 +47,7 @@
     {
       "breed": "Beagle",
       "origin": "England",
-      "size": "Small to Medium",
+      "size": "Medium",
       "weight_range": "20-30 lbs",
       "life_expectancy": "12-15 years",
       "temperament": ["Curious", "Friendly", "Merry"],
@@ -56,7 +56,7 @@
     {
       "breed": "Boxer",
       "origin": "Germany",
-      "size": "Medium to Large",
+      "size": "Large",
       "weight_range": "50-80 lbs",
       "life_expectancy": "10-12 years",
       "temperament": ["Energetic", "Loyal", "Playful"],
@@ -182,7 +182,7 @@
     {
       "breed": "Shiba Inu",
       "origin": "Japan",
-      "size": "Small to Medium",
+      "size": "Medium",
       "weight_range": "17-23 lbs",
       "life_expectancy": "12-16 years",
       "temperament": ["Confident", "Loyal", "Alert"],
