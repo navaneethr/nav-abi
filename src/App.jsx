@@ -10,6 +10,8 @@ import BasicTodo from "./components/BasicTodo";
 import Scribble from "./components/Scribble";
 import BasicCalculator from "./components/BasicCalculator";
 import NoteTaker from "./components/NoteTaker";
+import Catalogue from "./components/Catalogue";
+import Dogs from "./components/Dogs";
 
 const App = () => {
   return (
@@ -25,6 +27,8 @@ const App = () => {
               <Route path="/scribble" element={<Scribble />} />
               <Route path="/basicCalculator" element={<BasicCalculator />} />
               <Route path="/noteTaker" element={<NoteTaker />} />
+              <Route path="/catalogue" element={<Catalogue />} />
+              <Route path="/dogs" element={<Dogs />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </main>
