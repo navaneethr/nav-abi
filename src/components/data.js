@@ -6,7 +6,7 @@ export const laptopData = [
         "model": "15-fd0107dx/A9PE7UA#ABA",
         "sku": "6587202",
         "rating": "4",
-        "image": require("../assets/images/hp1.webp"),
+        "image": "../assets/images/hp1.webp",
         "price": "$ 509.99",
         "discount": "Save $290"
     },
@@ -16,7 +16,7 @@ export const laptopData = [
         "model": "MC7X4LL/A",
         "sku": "6602763",
         "rating": "5",
-        "image": require("../assets/images/apple1.webp"),
+        "image": "../assets/images/apple1.webp",
         "price": "$ 799.00",
         "discount": "Save $200"
     },
@@ -26,7 +26,7 @@ export const laptopData = [
         "model": "17-cp3005dx/A9FY8UA#ABA",
         "sku": "6587274",
         "rating": "4.5",
-        "image": require("../assets/images/hp2.webp"),
+        "image": "../assets/images/hp2.webp",
         "price": "$ 349.99",
         "discount": "Save $280"
     },
@@ -36,7 +36,7 @@ export const laptopData = [
         "model": "83DL0002US",
         "sku": "6571369",
         "rating": "4",
-        "image": require("../assets/images/lenovo1.webp"),
+        "image": "../assets/images/lenovo1.webp",
         "price": "$ 649.99",
         "discount": "Save $400"
     },
@@ -46,7 +46,7 @@ export const laptopData = [
         "model": "GA403UV-G14.R94060",
         "sku": "6570270",
         "rating": "4.5",
-        "image": require("../assets/images/asus1.webp"),
+        "image": "../assets/images/asus1.webp",
         "price": "$ 1099.99",
         "discount": "Save $500"
     },
@@ -56,7 +56,7 @@ export const laptopData = [
         "model": "AWM18R-9494BLK-PUS",
         "sku": "6572635",
         "rating": "5",
-        "image": require("../assets/images/alienw1.webp"),
+        "image": "../assets/images/alienw1.webp",
         "price": "$ 1899.99",
         "discount": "Save $600"
     }

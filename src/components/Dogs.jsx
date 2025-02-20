@@ -1,5 +1,9 @@
 import React, { useState } from "react";
+import styles from "../styles/dogs.module.css";
+import Dog from "../components/Utils/Dog";
+import SideDrawer from "./Utils/SideDrawer";
 import dogs from "../data/dogs.json"
+
 
 const Dogs = () => {
     const [showDrawer, setShowDrawer] = useState(false)
@@ -15,12 +19,14 @@ const Dogs = () => {
         setShowDrawer(false)
         // Why are we setting this to be Null
         setSelectedDog(null);
+        // we are setting the setSelectedDog to be null to reset the display of the dog info on sidebar to empty
+        // so that the sidebar vanishes as there is no data to display and keep the sidebar open
     }
 
   return (
-    <div style={{display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center"}}>
+    <div className={styles.mainDogContainer}>
       <h1>Dogs</h1>
-      <div style={{display: "flex", flexWrap: "wrap", justifyContent: "center"}}>
+      <div className={styles.dogList}>
         {
             dogs.map((dog, index) => {
                 return (
@@ -29,35 +35,21 @@ const Dogs = () => {
             })
         }
       </div>
-      {/* What is && operator */}
+      {/* What is && operator ?
+            A: The && operator when used in JSX acts as an expression. This is done by wrapping them in curly braces
+                and is a way of using the JavaScript logical && operator to conditionally include an element in the JSX.
+                
+                How it works: 
+                true && expression - always evaluates to expression
+                false && expression - always evaluates to false 
+                
+                Therefore if the condition is true, the element right after the && will appear in the output.
+                If it is false, React will ignore and skip it. */}
       {
         showDrawer && <SideDrawer onBackClick={onBackClick} selectedDog={selectedDog}/>
       }
     </div>
   );
 };
-
-const Dog = ({imgUrl, breed, onViewMore}) => {
-    return (
-        <div style={{display: "flex", justifyContent: "center", alignItems: "center", width: "300px", height: "300px", border: "1px solid", margin: "5px"}}>
-            Why is this imgUrl instead of image_url
-            <img src={imgUrl} height="100"/>
-            <div>{breed}</div>
-            <button onClick={onViewMore}>View More</button>
-        </div>
-    )
-}
-
-const SideDrawer = ({onBackClick, selectedDog}) => {
-    // What is selectedDog above
-    return (
-        <div style={{ height: "100vh", width: "60%", background: "#cacaca", position: "fixed", top: 0, bottom: 0, right: 0, padding: "10px"}}>
-            <div>
-                <button onClick={onBackClick}>Back</button>
-            </div>
-            Name: {selectedDog.breed}
-        </div>
-    )
-}
 
 export default Dogs;
