@@ -35,6 +35,8 @@ const Dogs = () => {
             })
         }
       </div>
+      <p>Remaining Count: {dogs.length}</p>
+      <button>View More</button>
       {/* What is && operator ?
             A: The && operator when used in JSX acts as an expression. This is done by wrapping them in curly braces
                 and is a way of using the JavaScript logical && operator to conditionally include an element in the JSX.

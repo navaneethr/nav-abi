@@ -10,7 +10,7 @@ const Dog = ({imgUrl, breed, onViewMore}) => {
                  */}
             <img src={imgUrl} className={styles.dogImage} />
             <div className={styles.breedName}>{breed}</div>
-            <button onClick={onViewMore}>View More</button>
+            <button onClick={onViewMore}>View</button>
         </div>
     )
 }
