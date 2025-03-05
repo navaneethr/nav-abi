@@ -1,7 +1,7 @@
 import React from "react"
 import styles from "../../styles/dogs.module.css"
 
-const Dog = ({imgUrl, breed, onViewMore}) => {
+const Dog = ({imgUrl, breed, origin, onViewMore}) => {
     return (
         <div className={styles.dogDiv}>
             {/* Why is this imgUrl instead of image_url ?
@@ -10,6 +10,7 @@ const Dog = ({imgUrl, breed, onViewMore}) => {
                  */}
             <img src={imgUrl} className={styles.dogImage} />
             <div className={styles.breedName}>{breed}</div>
+            <div>{origin}</div>
             <button onClick={onViewMore}>View</button>
         </div>
     )
